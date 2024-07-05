@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src=“https://web-sdk-cdn.singular.net/singular-sdk/latest/singular-sdk.js”>
+    </script>
+</head>
+<body onload=“initSDK()“>
+<script>
+function initSDK(){
+		// SingularConfig
+		var apiKey = “se_demo_2f437a02”;
+		var secretKey = “e7cd35d2b614b4fd53ac7a8c28be3f8e";
+		var productId = “com.solutionservices”;
+		
+		var config = new SingularConfig(apiKey, secretKey, productId);
+		function initSingular() {
+			var config = new SingularConfig(apiKey,
+				secretKey, productId);
+				singularSdk.init(config);
+		}
+		initSingular();
+};
+</script>
+<button onclick=“singularWebtoApp()” >Click me</button>
+<script>
+	function singularWebtoApp() {
+		singularSdk.event(“Download Web App”);
+		singularSdk.openApp(“https://wonderwins11.sng.link/D3sw1/dodn?_dl=https%3A%2F%2Fwonderwins.page.link%2FEspn”);
+	};
+</script>
+</body>
+</html>
